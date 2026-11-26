@@ -1,0 +1,15 @@
+{
+  "runtime": "typescript",
+  "platformVersion": 31,
+  "entry": "client/dist/index.html",
+  "name": "Cricket Live Score",
+  "slug": "cricket-live-score",
+  "managedCronJobs": [
+    {
+      "id": "cricket-live-score-refresh",
+      "action": "refreshScores",
+      "schedule": "interval@30m",
+      "owner": "space:cricket-live-score"
+    }
+  ]
+}
